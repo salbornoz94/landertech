@@ -12,7 +12,7 @@ import { useLanguage } from "@/lib/LanguageContext";
 import { LanguageSelector } from "@/components/LanguageSelector";
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -121,31 +121,30 @@ export default function Home() {
 
   const projects = [
     {
-      title: "Automated CRM: Azul Emergencies",
-      description: "Integrated system that optimized customer management and simplified administrative tasks, providing greater operational...",
-      tags: ["customized CRM", "automation", "management software"],
-      image: "https://ext.same-assets.com/3500878627/1397388609.webp"
+      title: "QUO Centro Médico",
+      description: language === 'es' 
+        ? "Plataforma web para la gestión de turnos médicos online, permitiendo a pacientes reservar citas y a administradores gestionar profesionales y especialidades. Desarrollada para QUO Centro Médico en Tucumán."
+        : "Web platform for online medical appointment management, allowing patients to book appointments and administrators to manage professionals and specialties. Developed for QUO Medical Center in Tucumán.",
+      tags: ["Next.js", "Node.js", "Tailwind CSS"],
+      image: "/quo-centromedico-5.webp",
+      url: "https://www.quocentromedico.com/"
     },
     {
-      title: "Institutional Website: Tucumán Technological Cluster",
-      description: "We created a website designed to enhance the organization's online presence. We designed interactive tools that improve digital communication and connect more effectively with your...",
-      tags: ["digital communication", "user registration", "blog"],
-      image: "https://ext.same-assets.com/3500878627/3608257730.webp"
-    },
-    {
-      title: "Digital Library: BookLoop",
-      description: "Web application that transforms library management: reserve books, create favorite lists, leave reviews, and contribute new titles. An intuitive app that fosters collaboration and knowledge...",
-      tags: ["digital library", "collaborative platform", "web application"],
-      image: "https://ext.same-assets.com/3500878627/1397018652.webp"
+      title: "AutoARG",
+      description: language === 'es'
+        ? "Plataforma en Argentina para consulta de precios de autos nuevos y usados, con funcionalidades de búsqueda avanzada, calculadora de transferencias y planes de suscripción. Desarrollada para brindar información actualizada y confiable a miles de usuarios mensuales."
+        : "Platform in Argentina for consulting prices of new and used cars, with advanced search functionalities, transfer calculator and subscription plans. Developed to provide updated and reliable information to thousands of monthly users.",
+      tags: ["Next.js", "Node.js", "Tailwind CSS"],
+      image: "/autoarg-5.webp",
+      url: "https://www.autoarg.com/"
     }
   ];
 
 
 
   const clients = [
-    { name: "Cluster Tecnológico Tucumán", logo: "https://ext.same-assets.com/3500878627/1702056659.svg" },
-    { name: "Metrocúbico Internacional", logo: "https://ext.same-assets.com/3500878627/2564119714.svg" },
-    { name: "Azul Emergencias Mecánicas", logo: "https://ext.same-assets.com/3500878627/713940600.svg" }
+    { name: "QUO Centro Médico", logo: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=200&h=100&fit=crop" },
+    { name: "AutoARG", logo: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=200&h=100&fit=crop" }
   ];
 
 
@@ -391,9 +390,11 @@ export default function Home() {
             {projects.map((project, index) => (
               <Card key={index} className="bg-white overflow-hidden hover:transform hover:scale-105 transition-transform shadow-xl">
                 <div className="aspect-video overflow-hidden">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
+                    width={400}
+                    height={225}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -411,7 +412,11 @@ export default function Home() {
                       </Badge>
                     ))}
                   </div>
-                  <Button variant="outline" className="border-gray-300 hover:border-purple-400 text-gray-700 hover:text-purple-600 font-medium">
+                  <Button 
+                    variant="outline" 
+                    className="border-gray-300 hover:border-purple-400 text-gray-700 hover:text-purple-600 font-medium"
+                    onClick={() => window.open(project.url, '_blank')}
+                  >
                     {t.projects.viewProject}
                     <ExternalLink className="w-4 h-4 ml-2" />
                   </Button>

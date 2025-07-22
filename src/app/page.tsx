@@ -143,8 +143,8 @@ export default function Home() {
 
 
   const clients = [
-    { name: "QUO Centro Médico", logo: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=200&h=100&fit=crop" },
-    { name: "AutoARG", logo: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=200&h=100&fit=crop" }
+    { name: "QUO Centro Médico", logo: "/quo.jpeg" },
+    { name: "Kuranda", logo: "/kuranda-logo.png" }
   ];
 
 
@@ -650,14 +650,19 @@ export default function Home() {
       <section className="py-20 px-4 bg-zinc-800">
         <div className="container mx-auto">
           <h2 className="text-5xl font-bold text-center mb-16 text-white">{t.clients.title}</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {clients.map((client, index) => (
               <div key={index} className="bg-zinc-700 p-12 text-center rounded-2xl hover:bg-zinc-600 transition-colors group">
-                <img
-                  src={client.logo}
-                  alt={client.name}
-                  className="max-h-20 mx-auto brightness-0 invert group-hover:scale-110 transition-transform"
-                />
+                <div className="relative w-full h-20 flex items-center justify-center">
+                  <Image
+                    src={client.logo}
+                    alt={client.name}
+                    fill
+                    className={`object-contain group-hover:scale-110 transition-transform ${
+                      client.logo.includes('.png') ? 'brightness-0 invert' : ''
+                    }`}
+                  />
+                </div>
               </div>
             ))}
           </div>

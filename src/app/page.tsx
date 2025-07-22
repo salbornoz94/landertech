@@ -388,7 +388,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="bg-white overflow-hidden hover:transform hover:scale-105 transition-transform shadow-xl">
+              <Card key={index} className="bg-zinc-800/50 border-zinc-700/50 backdrop-blur-sm overflow-hidden hover:transform hover:scale-105 transition-transform shadow-xl">
                 <div className="aspect-video overflow-hidden">
                   <Image
                     src={project.image}
@@ -399,22 +399,22 @@ export default function Home() {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-xl font-bold text-gray-900">{project.title}</CardTitle>
-                  <CardDescription className="text-gray-600 text-base leading-relaxed">
+                  <CardTitle className="text-xl font-bold text-white">{project.title}</CardTitle>
+                  <CardDescription className="text-zinc-300 text-base leading-relaxed">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="secondary" className="bg-purple-600/20 text-purple-700 border-purple-600/30 font-medium">
+                      <Badge key={tagIndex} variant="secondary" className="bg-purple-600/30 text-purple-300 border-purple-600/50 font-medium">
                         {tag}
                       </Badge>
                     ))}
                   </div>
                   <Button 
                     variant="outline" 
-                    className="border-gray-300 hover:border-purple-400 text-gray-700 hover:text-purple-600 font-medium"
+                    className="border-zinc-600 hover:border-purple-400 text-zinc-300 hover:text-purple-400 font-medium bg-zinc-700/50 hover:bg-purple-600/20"
                     onClick={() => window.open(project.url, '_blank')}
                   >
                     {t.projects.viewProject}

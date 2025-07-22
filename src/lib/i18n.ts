@@ -4,7 +4,7 @@ export interface Translations {
   nav: {
     projects: string;
     services: string;
-    pricing: string;
+    faq: string;
     contact: string;
   };
   hero: {
@@ -76,7 +76,7 @@ export const translations: Record<Language, Translations> = {
     nav: {
       projects: 'PROYECTOS',
       services: 'SERVICIOS',
-      pricing: 'PRECIOS',
+      faq: 'FAQ',
       contact: 'CONTACTO',
     },
     hero: {
@@ -167,7 +167,7 @@ export const translations: Record<Language, Translations> = {
     nav: {
       projects: 'PROJECTS',
       services: 'SERVICES',
-      pricing: 'PRICING',
+      faq: 'FAQ',
       contact: 'CONTACT',
     },
     hero: {

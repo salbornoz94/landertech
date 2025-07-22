@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Separator } from "@/components/ui/separator";
 import { Menu, X, ChevronDown, ArrowRight, ExternalLink, Instagram, Linkedin, Mail, User, Phone, MessageSquare, Send, CheckCircle } from "lucide-react";
+import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
 import { LanguageSelector } from "@/components/LanguageSelector";
 
@@ -166,7 +167,7 @@ export default function Home() {
           <nav className="hidden lg:flex items-center space-x-10">
             <button onClick={() => handleNavClick('#projects')} className="text-sm font-medium uppercase tracking-wider hover:text-purple-400 transition-colors duration-200">{t.nav.projects}</button>
             <button onClick={() => handleNavClick('#services')} className="text-sm font-medium uppercase tracking-wider hover:text-purple-400 transition-colors duration-200">{t.nav.services}</button>
-            <button onClick={() => handleNavClick('#pricing')} className="text-sm font-medium uppercase tracking-wider hover:text-purple-400 transition-colors duration-200">{t.nav.pricing}</button>
+            <button onClick={() => handleNavClick('#pricing')} className="text-sm font-medium uppercase tracking-wider hover:text-purple-400 transition-colors duration-200">{t.nav.faq}</button>
           </nav>
 
           {/* Right side - Language & Social */}
@@ -235,7 +236,7 @@ export default function Home() {
               onClick={() => handleNavClick('#pricing')}
               className="text-left text-lg font-medium hover:text-purple-400 transition-colors py-2"
             >
-              {t.nav.pricing}
+              {t.nav.faq}
             </button>
             <button
               onClick={scrollToContact}
@@ -324,9 +325,11 @@ export default function Home() {
 
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
-                <img
-                  src="https://ext.same-assets.com/3500878627/1916829327.webp"
-                  alt="BookLoop project mockup"
+                <Image
+                  src="/hero-image.png"
+                  alt="LanderTech project mockup"
+                  width={400}
+                  height={300}
                   className="rounded-lg transform rotate-3 hover:rotate-0 transition-transform"
                 />
                 <img

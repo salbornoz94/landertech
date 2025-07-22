@@ -500,7 +500,7 @@ export default function Home() {
                           name="name"
                           value={formData.name}
                           onChange={handleInputChange}
-                          className={`w-full px-4 py-4 bg-zinc-700/50 border border-zinc-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all text-white placeholder-zinc-400 ${
+                          className={`w-full px-4 py-4 bg-zinc-800 border border-zinc-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all text-white placeholder-zinc-400 ${
                             formErrors.name ? 'ring-2 ring-red-500' : ''
                           }`}
                           placeholder="Tu nombre"
@@ -520,7 +520,7 @@ export default function Home() {
                           name="email"
                           value={formData.email}
                           onChange={handleInputChange}
-                          className={`w-full px-4 py-4 bg-zinc-700/50 border border-zinc-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all text-white placeholder-zinc-400 ${
+                          className={`w-full px-4 py-4 bg-zinc-800 border border-zinc-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all text-white placeholder-zinc-400 ${
                             formErrors.email ? 'ring-2 ring-red-500' : ''
                           }`}
                           placeholder="tu@email.com"
@@ -541,7 +541,7 @@ export default function Home() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className={`w-full px-4 py-4 bg-zinc-700/50 border border-zinc-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all text-white placeholder-zinc-400 ${
+                        className={`w-full px-4 py-4 bg-zinc-800 border border-zinc-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all text-white placeholder-zinc-400 ${
                           formErrors.phone ? 'ring-2 ring-red-500' : ''
                         }`}
                         placeholder="+54 9 381 123-4567"
@@ -561,7 +561,7 @@ export default function Home() {
                         value={formData.message}
                         onChange={handleInputChange}
                         rows={5}
-                        className={`w-full px-4 py-4 bg-zinc-700/50 border border-zinc-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all resize-none text-white placeholder-zinc-400 ${
+                        className={`w-full px-4 py-4 bg-zinc-800 border border-zinc-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all resize-none text-white placeholder-zinc-400 ${
                           formErrors.message ? 'ring-2 ring-red-500' : ''
                         }`}
                         placeholder="Cuéntanos sobre tu proyecto..."

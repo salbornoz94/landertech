@@ -468,7 +468,7 @@ export default function Home() {
       </section>
 
       {/* Contact Form Section */}
-      <section id="contact" className="py-20 px-4">
+      <section id="contact" className="py-20 px-4 bg-zinc-900">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold mb-6">{t.contact.title}</h2>
@@ -479,7 +479,7 @@ export default function Home() {
 
           <div className="max-w-2xl mx-auto">
             {/* Contact Form */}
-            <Card className="dark-card shadow-lg border-zinc-700/50 rounded-2xl overflow-hidden">
+            <Card className="bg-zinc-800/80 border-zinc-700/50 backdrop-blur-sm shadow-lg rounded-2xl overflow-hidden">
               <CardContent className="p-8">
                 {isSubmitted ? (
                   <div className="text-center py-12">
@@ -491,7 +491,7 @@ export default function Home() {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-semibold text-zinc-300 mb-3">
+                        <label htmlFor="name" className="block text-sm font-semibold text-white mb-3">
                           {t.contact.name}
                         </label>
                         <input
@@ -511,7 +511,7 @@ export default function Home() {
                       </div>
 
                       <div>
-                        <label htmlFor="email" className="block text-sm font-semibold text-zinc-300 mb-3">
+                        <label htmlFor="email" className="block text-sm font-semibold text-white mb-3">
                           {t.contact.email}
                         </label>
                         <input
@@ -532,7 +532,7 @@ export default function Home() {
                     </div>
 
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-semibold text-zinc-300 mb-3">
+                      <label htmlFor="phone" className="block text-sm font-semibold text-white mb-3">
                         {t.contact.phone}
                       </label>
                       <input
@@ -552,7 +552,7 @@ export default function Home() {
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-sm font-semibold text-zinc-300 mb-3">
+                      <label htmlFor="message" className="block text-sm font-semibold text-white mb-3">
                         {t.contact.message}
                       </label>
                       <textarea

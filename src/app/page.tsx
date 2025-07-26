@@ -156,13 +156,15 @@ export default function Home() {
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <Image
-              src="/imagenes/MarcaGráficaFondoTransparente-07.png"
-              alt="LanderTech Logo"
-              width={40}
-              height={40}
-              className="rounded-lg"
-            />
+            <div className="w-10 h-10 bg-white rounded-lg p-1 flex items-center justify-center">
+              <Image
+                src="/imagenes/MarcaGráficaFondoTransparente-07.png"
+                alt="LanderTech Logo"
+                width={32}
+                height={32}
+                className="rounded-md"
+              />
+            </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">LanderTech</span>
           </div>
 

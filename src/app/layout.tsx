@@ -17,6 +17,27 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "LanderTech - Diseño Web y Soluciones Digitales",
   description: "Diseñamos sitios web que marcan la diferencia. Con un enfoque en UX/UI innovador y optimización SEO, creamos sitios que se ven increíbles y funcionan perfectamente en cualquier dispositivo.",
+  icons: {
+    icon: [
+      { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon/favicon.ico', sizes: 'any' }
+    ],
+    apple: [
+      { url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+    other: [
+      { url: '/favicon/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' }
+    ]
+  },
+  manifest: '/favicon/site.webmanifest',
+  themeColor: '#8b5cf6',
+  viewport: 'width=device-width, initial-scale=1',
+  other: {
+    'msapplication-TileColor': '#8b5cf6',
+    'msapplication-TileImage': '/favicon/android-chrome-192x192.png'
+  }
 };
 
 export default function RootLayout({

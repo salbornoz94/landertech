@@ -158,7 +158,7 @@ export default function Home() {
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-white rounded-lg p-1 flex items-center justify-center">
               <Image
-                src="/imagenes/MarcaGráficaFondoTransparente-07.png"
+                src="/imagenes/MarcaGráficaFondoTransparente-06.png"
                 alt="LanderTech Logo"
                 width={32}
                 height={32}

@@ -80,16 +80,16 @@ export const translations: Record<Language, Translations> = {
       contact: 'CONTACTO',
     },
     hero: {
-      title: 'Diseño Web y Soluciones Digitales',
-      titleLines: ['Diseño', 'Web', 'y', 'Soluciones', 'Digitales'],
-      subtitle: 'Diseñamos sitios web que marcan la diferencia. Con un enfoque en UX/UI innovador y optimización SEO, creamos sitios que se ven increíbles y funcionan perfectamente en cualquier dispositivo. Estamos aquí para darle a tu negocio la presencia online que merece.',
+      title: 'Software que hace la diferencia',
+      titleLines: ['Software', 'que hace', 'la diferencia'],
+      subtitle: 'Diseñamos y desarrollamos software que resuelve problemas reales. Potenciamos tus ideas con tecnología moderna, experiencia de usuario y foco en resultados.',
       servicesButton: 'Servicios',
       contactButton: 'Contáctanos',
     },
     cta: {
       title: '¿Quieres hacer crecer tu negocio?',
       description: 'No pierdas la oportunidad de mejorar tus resultados de manera rápida y eficiente. Accede a soluciones para posicionar tu negocio online.',
-      button: 'Revisa nuestros planes',
+      button: 'Contactanos',
     },
     projects: {
       title: 'Nuestros proyectos destacados',
@@ -103,7 +103,7 @@ export const translations: Record<Language, Translations> = {
       button: 'Servicios',
     },
     contact: {
-      title: 'Ponte en contacto',
+      title: 'Contacto',
       subtitle: '¿Listo para transformar tu presencia digital? Contáctanos hoy y conversemos sobre cómo podemos ayudar a tu negocio a crecer online.',
       conversationTitle: 'Iniciemos una conversación',
       conversationDescription: 'Estamos aquí para ayudarte a crear experiencias digitales increíbles. Ya sea que necesites un nuevo sitio web, quieras mejorar el existente o tengas preguntas sobre nuestros servicios, nos encantaría escucharte.',
@@ -171,9 +171,9 @@ export const translations: Record<Language, Translations> = {
       contact: 'CONTACT',
     },
     hero: {
-      title: 'Web Design and Digital Solutions',
-      titleLines: ['Web', 'Design', 'and', 'Digital', 'Solutions'],
-      subtitle: 'We design websites that make a difference. With a focus on innovative UX/UI and SEO optimization, we create sites that look amazing and work perfectly on any device. We are here to give your business the online presence it deserves.',
+      title: 'Software that makes a difference',
+      titleLines: ['Software', 'that makes', 'a difference'],
+      subtitle: 'We design and develop software that solves real problems. We empower your ideas with modern technology, great user experience, and a focus on results.',
       servicesButton: 'Services',
       contactButton: 'Contact us',
     },

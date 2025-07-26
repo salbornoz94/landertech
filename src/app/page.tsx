@@ -353,12 +353,14 @@ export default function Home() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button
-                className="purple-gradient hover:opacity-90 text-white px-10 py-6 text-xl font-semibold rounded-full shadow-lg"
-                onClick={() => handleNavClick('#pricing')}
-              >
-                {t.cta.button}
-              </Button>
+              <div className="flex justify-center">
+                <Button
+                  className="purple-gradient hover:opacity-90 text-white px-10 py-6 text-xl font-semibold rounded-full shadow-lg"
+                  onClick={() => handleNavClick('#contact')}
+                >
+                  {t.cta.button}
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </div>
@@ -531,7 +533,7 @@ export default function Home() {
                           className={`w-full px-4 py-4 bg-zinc-800 border border-zinc-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all text-white placeholder-zinc-400 ${
                             formErrors.email ? 'ring-2 ring-red-500' : ''
                           }`}
-                          placeholder="tu@email.com"
+                          placeholder="tu-email@gmail.com"
                         />
                         {formErrors.email && (
                           <p className="text-red-500 text-sm mt-2">{formErrors.email}</p>
@@ -608,14 +610,13 @@ export default function Home() {
                   <div className="w-12 h-12 bg-zinc-700/50 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Mail className="w-6 h-6 text-zinc-300" />
                   </div>
-                  <p className="font-semibold">nosotros@landertech.com</p>
+                  <p className="font-semibold">contacto@landertech.com</p>
                 </div>
-
                 <div className="text-center">
                   <div className="w-12 h-12 bg-zinc-700/50 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Phone className="w-6 h-6 text-zinc-300" />
                   </div>
-                  <p className="font-semibold">+54 9 381 619-1766</p>
+                  <p className="font-semibold">+54 9 3813011730</p>
                 </div>
 
                 <div className="text-center">
@@ -628,15 +629,21 @@ export default function Home() {
 
               {/* Social Links - Minimalist */}
               <div className="flex justify-center space-x-6 pt-8">
-                <a href="#" className="w-10 h-10 bg-zinc-700/50 rounded-full flex items-center justify-center hover:bg-purple-600 hover:text-white transition-all duration-200">
+                <a
+                  href="https://www.instagram.com/lander.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-zinc-700/50 rounded-full flex items-center justify-center hover:bg-purple-600 hover:text-white transition-all duration-200"
+                >
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-zinc-700/50 rounded-full flex items-center justify-center hover:bg-purple-600 hover:text-white transition-all duration-200">
+                <a
+                  href="https://www.linkedin.com/company/69324615/admin/dashboard/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-zinc-700/50 rounded-full flex items-center justify-center hover:bg-purple-600 hover:text-white transition-all duration-200"
+                >
                   <Linkedin className="w-5 h-5" />
-                </a>
-
-                <a href="#" className="w-10 h-10 bg-zinc-700/50 rounded-full flex items-center justify-center hover:bg-purple-600 hover:text-white transition-all duration-200">
-                  <Mail className="w-5 h-5" />
                 </a>
               </div>
             </div>

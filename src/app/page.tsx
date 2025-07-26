@@ -137,6 +137,15 @@ export default function Home() {
       tags: ["Next.js", "Node.js", "Tailwind CSS"],
       image: "/autoarg-5.webp",
       url: "https://www.autoarg.com/"
+    },
+    {
+      title: "Kuranda Bares",
+      description: language === 'es'
+        ? "Aplicación web para la gestión y descubrimiento de bares en Kuranda. Plataforma interactiva que permite a usuarios explorar diferentes establecimientos, consultar información detallada y conectar con la vibrante vida nocturna local."
+        : "Web application for bar management and discovery in Kuranda. Interactive platform that allows users to explore different establishments, consult detailed information and connect with the vibrant local nightlife.",
+      tags: ["React", "JavaScript", "CSS"],
+      image: "/ilustraciones/IlustracionesLanderTech-04.png",
+      url: "http://kuranda-bares-test.netlify.app/"
     }
   ];
 

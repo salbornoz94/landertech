@@ -126,28 +126,28 @@ export const translations: Record<Language, Translations> = {
       title: 'Preguntas Frecuentes',
       questions: [
         {
-          question: '¿Qué es el diseño web y por qué es importante?',
-          answer: 'El diseño web es el proceso de crear y organizar elementos visuales, contenido y funcionalidad de sitios web. Es importante porque afecta la experiencia del usuario, la percepción de la marca y las conversiones del negocio.'
+          question: '¿Por qué mi empresa necesita una web profesional?',
+          answer: 'Tu web es tu carta de presentación digital 24/7. Transmite profesionalismo, credibilidad y facilita que tus clientes te encuentren. En 2025, no tener web profesional es como no tener teléfono en los 90s.'
         },
         {
-          question: '¿Cuál es la diferencia entre diseño web y desarrollo web?',
-          answer: 'El diseño web se enfoca en los aspectos visuales y de experiencia del usuario, mientras que el desarrollo web involucra la implementación técnica y programación que hace funcionar los sitios web.'
+          question: '¿Qué pasa si mi negocio crece y necesito más funcionalidades?',
+          answer: 'Perfecto, eso significa que tu web está funcionando. Diseñamos sitios escalables que pueden crecer contigo. Podemos agregar nuevas secciones, funcionalidades avanzadas, integrar sistemas de gestión o crear aplicaciones web personalizadas.'
         },
         {
-          question: '¿Qué es un sitio web responsivo?',
-          answer: 'Un sitio web responsivo se adapta automáticamente y optimiza su diseño, contenido y funcionalidad en diferentes dispositivos y tamaños de pantalla para una experiencia de usuario óptima.'
+          question: '¿Mi web actual está funcionando mal, se puede mejorar?',
+          answer: 'Si tu web no te genera consultas, carga lenta o se ve anticuada, es momento de renovarla. Analizamos tu situación actual y creamos una estrategia para maximizar tu presencia digital sin perder tu posicionamiento.'
         },
         {
-          question: '¿Qué necesito para crear un sitio web?',
-          answer: 'Necesitas un nombre de dominio, hosting web, servicios de diseño/desarrollo, contenido y mantenimiento continuo. Podemos ayudarte con todos estos aspectos.'
+          question: '¿Ofrecen soporte después de entregar la web?',
+          answer: 'Absolutamente. No te dejamos solo después de la entrega. Ofrecemos soporte técnico, actualizaciones de seguridad y podemos ayudarte con cambios menores. Tu tranquilidad es importante para nosotros.'
         },
         {
-          question: '¿Cuánto cuesta un sitio web?',
-          answer: 'Los costos de un sitio web varían según la complejidad, características y requisitos. Ofrecemos diferentes paquetes para adaptarse a varios presupuestos y necesidades de negocio.'
+          question: '¿Qué incluye el desarrollo de una web profesional?',
+          answer: 'Diseño personalizado, programación a medida, optimización para móviles, velocidad optimizada, SEO básico, formularios de contacto, integración con redes sociales y capacitación para que puedas gestionar contenido básico.'
         },
         {
-          question: '¿Por qué es importante optimizar mi sitio web para SEO?',
-          answer: 'La optimización SEO ayuda a que tu sitio web se posicione mejor en los resultados de búsqueda, aumentando la visibilidad, el tráfico y los clientes potenciales para tu negocio.'
+          question: '¿Cuánto tiempo lleva crear una web desde cero?',
+          answer: 'Una web profesional toma entre 3-6 semanas dependiendo de la complejidad. No hacemos plantillas genéricas; cada proyecto es único y diseñado específicamente para tu empresa y objetivos de negocio.'
         }
       ]
     },
@@ -217,28 +217,28 @@ export const translations: Record<Language, Translations> = {
       title: 'Frequently Asked Questions',
       questions: [
         {
-          question: 'What is web design and why is it important?',
-          answer: 'Web design is the process of creating and arranging visual elements, content, and functionality of websites. It\'s important because it affects user experience, brand perception, and business conversions.'
+          question: 'Why does my company need a professional website?',
+          answer: 'Your website is your digital business card 24/7. It conveys professionalism, credibility, and makes it easy for your customers to find you. In 2025, not having a professional website is like not having a phone in the 90s.'
         },
         {
-          question: 'What is the difference between web design and web development?',
-          answer: 'Web design focuses on the visual and user experience aspects, while web development involves the technical implementation and programming that makes websites function.'
+          question: 'What if my business grows and I need more features?',
+          answer: 'Perfect, that means your website is working. We design scalable sites that can grow with you. We can add new sections, advanced features, integrate management systems, or create custom web applications.'
         },
         {
-          question: 'What is a responsive website?',
-          answer: 'A responsive website automatically adapts and optimizes its layout, content, and functionality across different devices and screen sizes for optimal user experience.'
+          question: 'My current website isn\'t working well, can it be improved?',
+          answer: 'If your website doesn\'t generate inquiries, loads slowly, or looks outdated, it\'s time to renew it. We analyze your current situation and create a strategy to maximize your digital presence without losing your positioning.'
         },
         {
-          question: 'What do I need to create a website?',
-          answer: 'You need a domain name, web hosting, design/development services, content, and ongoing maintenance. We can help you with all these aspects.'
+          question: 'Do you offer support after delivering the website?',
+          answer: 'Absolutely. We don\'t leave you alone after delivery. We offer technical support, security updates, and can help you with minor changes. Your peace of mind is important to us.'
         },
         {
-          question: 'How much does a website cost?',
-          answer: 'Website costs vary based on complexity, features, and requirements. We offer different packages to suit various budgets and business needs.'
+          question: 'What does professional web development include?',
+          answer: 'Custom design, tailored programming, mobile optimization, speed optimization, basic SEO, contact forms, social media integration, and training so you can manage basic content.'
         },
         {
-          question: 'Why is it important to optimize my website for SEO?',
-          answer: 'SEO optimization helps your website rank higher in search results, increasing visibility, traffic, and potential customers for your business.'
+          question: 'How long does it take to create a website from scratch?',
+          answer: 'A professional website takes 3-6 weeks depending on complexity. We don\'t use generic templates; each project is unique and designed specifically for your company and business objectives.'
         }
       ]
     },

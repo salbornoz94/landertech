@@ -147,7 +147,7 @@ export const translations: Record<Language, Translations> = {
         },
         {
           question: '¿Cuánto tiempo lleva crear una web desde cero?',
-          answer: 'Una web profesional toma entre 3-6 semanas dependiendo de la complejidad. No hacemos plantillas genéricas; cada proyecto es único y diseñado específicamente para tu empresa y objetivos de negocio.'
+          answer: 'Cada proyecto es único y analizamos los tiempos personalizadamente según la complejidad y requerimientos específicos. No hacemos plantillas genéricas; cada sitio es diseñado a medida para tu empresa y objetivos de negocio.'
         }
       ]
     },
@@ -238,7 +238,7 @@ export const translations: Record<Language, Translations> = {
         },
         {
           question: 'How long does it take to create a website from scratch?',
-          answer: 'A professional website takes 3-6 weeks depending on complexity. We don\'t use generic templates; each project is unique and designed specifically for your company and business objectives.'
+          answer: 'Each project is unique and we analyze timelines personally according to complexity and specific requirements. We don\'t use generic templates; each site is custom designed for your company and business objectives.'
         }
       ]
     },

@@ -155,18 +155,22 @@ export default function Home() {
       <header className="fixed top-0 w-full z-50 bg-zinc-900/95 backdrop-blur-lg border-b border-zinc-700/30">
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           {/* Logo */}
-                      <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 purple-gradient rounded-lg shadow-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">L</span>
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">LanderTech</span>
-            </div>
+          <div className="flex items-center space-x-3">
+            <Image
+              src="/imagenes/MarcaGráficaFondoTransparente-07.png"
+              alt="LanderTech Logo"
+              width={40}
+              height={40}
+              className="rounded-lg"
+            />
+            <span className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">LanderTech</span>
+          </div>
 
           {/* Navigation - Center */}
           <nav className="hidden lg:flex items-center space-x-10">
             <button onClick={() => handleNavClick('#projects')} className="text-sm font-medium uppercase tracking-wider hover:text-purple-400 transition-colors duration-200">{t.nav.projects}</button>
             <button onClick={() => handleNavClick('#services')} className="text-sm font-medium uppercase tracking-wider hover:text-purple-400 transition-colors duration-200">{t.nav.services}</button>
-            <button onClick={() => handleNavClick('#pricing')} className="text-sm font-medium uppercase tracking-wider hover:text-purple-400 transition-colors duration-200">{t.nav.faq}</button>
+            <button onClick={() => handleNavClick('#faq')} className="text-sm font-medium uppercase tracking-wider hover:text-purple-400 transition-colors duration-200">{t.nav.faq}</button>
           </nav>
 
           {/* Right side - Language & Social */}
@@ -232,7 +236,7 @@ export default function Home() {
               {t.nav.services}
             </button>
             <button
-              onClick={() => handleNavClick('#pricing')}
+                                onClick={() => handleNavClick('#faq')}
               className="text-left text-lg font-medium hover:text-purple-400 transition-colors py-2"
             >
               {t.nav.faq}
@@ -285,8 +289,19 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
-        <div className="container mx-auto">
+      <section className="pt-32 pb-20 px-4 relative overflow-hidden min-h-screen flex items-center">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/recursos/close-up-image-programer-working-his-desk-office.jpg"
+            alt="Professional workspace"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-zinc-900/90 via-zinc-800/80 to-zinc-900/90"></div>
+        </div>
+        <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
@@ -323,19 +338,32 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              <div className="grid grid-cols-2 gap-4">
-                <Image
-                  src="/hero-image.png"
-                  alt="LanderTech project mockup"
-                  width={400}
-                  height={300}
-                  className="rounded-lg transform rotate-3 hover:rotate-0 transition-transform"
-                />
-                <img
-                  src="https://ext.same-assets.com/3500878627/2318990618.webp"
-                  alt="Mobile cluster mockup"
-                  className="rounded-lg transform -rotate-3 hover:rotate-0 transition-transform mt-8"
-                />
+              <div className="grid grid-cols-1 gap-6">
+                <div className="relative">
+                  <Image
+                    src="/ilustraciones/IlustracionesLanderTech-02.png"
+                    alt="LanderTech desarrollo web"
+                    width={500}
+                    height={400}
+                    className="rounded-xl transform hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <Image
+                    src="/ilustraciones/IlustracionesLanderTech-03.png"
+                    alt="LanderTech servicios"
+                    width={240}
+                    height={200}
+                    className="rounded-lg transform rotate-2 hover:rotate-0 transition-transform duration-300"
+                  />
+                  <Image
+                    src="/ilustraciones/IlustracionesLanderTech-04.png"
+                    alt="LanderTech soluciones"
+                    width={240}
+                    height={200}
+                    className="rounded-lg transform -rotate-2 hover:rotate-0 transition-transform duration-300 mt-8"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -343,9 +371,19 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto text-center">
-          <Card className="bg-white max-w-2xl mx-auto p-8 shadow-xl">
+      <section className="py-20 px-4 relative overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/recursos/contemporary-room-workplace-office-supplies-concept.jpg"
+            alt="Modern workplace"
+            fill
+            className="object-cover opacity-10"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-zinc-900/95 via-zinc-800/90 to-zinc-900/95"></div>
+        </div>
+        <div className="container mx-auto text-center relative z-10">
+          <Card className="bg-white/95 backdrop-blur-sm max-w-2xl mx-auto p-8 shadow-xl border-0">
             <CardHeader>
               <CardTitle className="text-4xl font-bold text-gray-900 mb-6">{t.cta.title}</CardTitle>
               <CardDescription className="text-gray-600 text-xl leading-relaxed">
@@ -449,10 +487,12 @@ export default function Home() {
               </Button>
             </div>
             <div className="relative">
-              <img
-                src="https://ext.same-assets.com/3500878627/3971648447.webp"
-                alt="About us"
-                className="rounded-lg"
+              <Image
+                src="/ilustraciones/IlustracionesLanderTech_Mesa de trabajo 1.png"
+                alt="LanderTech servicios digitales"
+                width={600}
+                height={500}
+                className="rounded-xl hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
@@ -478,8 +518,18 @@ export default function Home() {
       </section>
 
       {/* Contact Form Section */}
-      <section id="contact" className="py-20 px-4 bg-zinc-900">
-        <div className="container mx-auto max-w-4xl">
+      <section id="contact" className="py-20 px-4 bg-zinc-900 relative overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/recursos/workplace-with-smartphone-laptop-on-black-table-top-view-copyspace-background.jpg"
+            alt="Professional workspace"
+            fill
+            className="object-cover opacity-5"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-zinc-900/95 via-zinc-800/90 to-zinc-900/95"></div>
+        </div>
+        <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold mb-6">{t.contact.title}</h2>
             <p className="text-zinc-300 text-xl max-w-2xl mx-auto leading-relaxed">
@@ -677,7 +727,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section id="pricing" className="py-16 px-4">
+      <section id="faq" className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-semibold text-center mb-12 tracking-tight">{t.faq.title}</h2>
           <Accordion type="single" collapsible className="space-y-0">
@@ -726,14 +776,35 @@ export default function Home() {
       <footer className="bg-zinc-900 border-t border-zinc-700/50 py-12 px-4">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-4 mb-4 md:mb-0">
-              <Instagram className="w-5 h-5 hover:text-purple-400 cursor-pointer transition-colors" />
-              <Mail className="w-5 h-5 hover:text-purple-400 cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 hover:text-purple-400 cursor-pointer transition-colors" />
+            {/* Logo y empresa */}
+            <div className="flex items-center space-x-3 mb-4 md:mb-0">
+              <Image
+                src="/imagenes/MarcaGráficaFondoTransparente-08.png"
+                alt="LanderTech"
+                width={60}
+                height={60}
+                className="rounded-lg"
+              />
+              <div>
+                <span className="text-xl font-bold text-white">LanderTech</span>
+                <p className="text-zinc-400 text-sm">{t.footer.location}</p>
+              </div>
             </div>
-            <div className="text-center text-zinc-400">
-              <p>{t.footer.copyright}</p>
-              <p>{t.footer.location}</p>
+            
+            {/* Social y copyright */}
+            <div className="text-center">
+              <div className="flex items-center justify-center space-x-4 mb-2">
+                <a href="https://www.instagram.com/lander.tech" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="w-5 h-5 hover:text-purple-400 cursor-pointer transition-colors" />
+                </a>
+                <a href="mailto:contacto@landertech.com">
+                  <Mail className="w-5 h-5 hover:text-purple-400 cursor-pointer transition-colors" />
+                </a>
+                <a href="https://www.linkedin.com/company/69324615/admin/dashboard/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="w-5 h-5 hover:text-purple-400 cursor-pointer transition-colors" />
+                </a>
+              </div>
+              <p className="text-zinc-400 text-sm">{t.footer.copyright}</p>
             </div>
           </div>
         </div>

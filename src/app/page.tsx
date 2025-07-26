@@ -385,17 +385,19 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-br from-zinc-900/95 via-zinc-800/90 to-zinc-900/95"></div>
         </div>
         <div className="container mx-auto text-center relative z-10">
-          <Card className="bg-white/95 backdrop-blur-sm max-w-2xl mx-auto p-8 shadow-xl border-0">
+          <Card className="bg-zinc-800/80 backdrop-blur-lg max-w-3xl mx-auto p-12 shadow-2xl border border-zinc-700/50 rounded-3xl">
             <CardHeader>
-              <CardTitle className="text-4xl font-bold text-gray-900 mb-6">{t.cta.title}</CardTitle>
-              <CardDescription className="text-gray-600 text-xl leading-relaxed">
+              <CardTitle className="text-5xl font-bold text-white mb-8 leading-tight">
+                {t.cta.title}
+              </CardTitle>
+              <CardDescription className="text-zinc-300 text-2xl leading-relaxed max-w-2xl mx-auto">
                 {t.cta.description}
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex justify-center">
+              <div className="flex justify-center mt-8">
                 <Button
-                  className="purple-gradient hover:opacity-90 text-white px-10 py-6 text-xl font-semibold rounded-full shadow-lg"
+                  className="purple-gradient hover:opacity-90 hover:scale-105 text-white px-12 py-8 text-xl font-semibold rounded-full shadow-2xl transition-all duration-300"
                   onClick={() => handleNavClick('#contact')}
                 >
                   {t.cta.button}

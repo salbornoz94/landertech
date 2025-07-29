@@ -5,7 +5,17 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
+    // Verificar que la API key esté configurada
+    if (!process.env.RESEND_API_KEY) {
+      return NextResponse.json(
+        { error: 'RESEND_API_KEY no está configurada' },
+        { status: 500 }
+      );
+    }
+
     const { name, email, phone, message } = await request.json();
+
+    console.log('Datos recibidos:', { name, email, phone, message });
 
     const { data, error } = await resend.emails.send({
       from: 'Nuevo mensaje <onboarding@resend.dev>',
@@ -31,4 +41,9 @@ export async function POST(request: Request) {
       { status: 500 }
     );
   }
+}
+
+// Exportar otros métodos para evitar 405
+export async function GET() {
+  return NextResponse.json({ message: 'Use POST method' }, { status: 405 });
 } 

@@ -54,19 +54,19 @@ export default function Home() {
     }
 
     if (!formData.email.trim()) {
-      errors.email = 'Email is required';
+      errors.email = 'El email es requerido';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      errors.email = 'Please enter a valid email address';
+      errors.email = 'Por favor, ingrese una dirección de correo electrónico válida';
     }
 
     if (!formData.message.trim()) {
-      errors.message = 'Message is required';
+      errors.message = 'El mensaje es requerido';
     } else if (formData.message.trim().length < 10) {
-      errors.message = 'Message must be at least 10 characters';
+      errors.message = 'El mensaje debe tener al menos 10 caracteres';
     }
 
     if (formData.phone && !/^[\+]?[1-9][\d]{0,15}$/.test(formData.phone.replace(/[\s\-\(\)]/g, ''))) {
-      errors.phone = 'Please enter a valid phone number';
+      errors.phone = 'Por favor, ingrese un número de teléfono válido';
     }
 
     return errors;
@@ -99,21 +99,38 @@ export default function Home() {
 
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        }),
+      });
 
-      setIsSubmitted(true);
-      setFormData({ name: '', email: '', phone: '', message: '' });
-      setFormErrors({});
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', phone: '', message: '' });
+        setFormErrors({});
 
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
+        // Reset success message after 5 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 5000);
+      } else {
+        const errorData = await response.json();
+        console.error('Error sending email:', errorData);
+        alert('Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.');
+      }
 
     } catch (error) {
       console.error('Error submitting form:', error);
+      alert('Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.');
     } finally {
       setIsSubmitting(false);
     }
@@ -555,10 +572,20 @@ export default function Home() {
             <Card className="bg-zinc-800/80 border-zinc-700/50 backdrop-blur-sm shadow-lg rounded-2xl overflow-hidden">
               <CardContent className="p-8">
                 {isSubmitted ? (
-                  <div className="text-center py-12">
-                    <CheckCircle className="w-20 h-20 text-green-400 mx-auto mb-6" />
-                    <h3 className="text-2xl font-semibold mb-3">{t.contact.successTitle}</h3>
-                    <p className="text-zinc-300 text-lg">{t.contact.successMessage}</p>
+                  <div className="text-center py-16">
+                    <div className="w-24 h-24 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-8">
+                      <CheckCircle className="w-12 h-12 text-green-400" />
+                    </div>
+                    <h3 className="text-3xl font-bold text-white mb-4">{t.contact.successTitle}</h3>
+                    <p className="text-zinc-300 text-xl leading-relaxed max-w-md mx-auto">{t.contact.successMessage}</p>
+                    <div className="mt-8">
+                      <Button
+                        onClick={() => setIsSubmitted(false)}
+                        className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-medium transition-all"
+                      >
+                        Enviar otro mensaje
+                      </Button>
+                    </div>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">

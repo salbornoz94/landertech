@@ -156,7 +156,7 @@ export default function Home() {
       url: "https://www.autoarg.com/"
     },
     {
-      title: "Kuranda Bares",
+      title: "Kuranda Business",
       description: language === 'es'
         ? "Sistema web para gestión de pedidos de frutas y verduras entre bares, proveeduría, logística y administración. Permite a los clientes realizar pedidos, coordinar entregas y a los administradores gestionar usuarios, productos y vehículos."
         : "Web system for managing fruit and vegetable orders between bars, supply, logistics, and admin roles. Enables clients to place orders, coordinate deliveries, and admins to manage users, products, and vehicles.",

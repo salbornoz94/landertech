@@ -143,7 +143,7 @@ export default function Home() {
         ? "Plataforma web para la gestión de turnos médicos online, permitiendo a pacientes reservar citas y a administradores gestionar profesionales y especialidades. Desarrollada para QUO Centro Médico en Tucumán."
         : "Web platform for online medical appointment management, allowing patients to book appointments and administrators to manage professionals and specialties. Developed for QUO Medical Center in Tucumán.",
       tags: ["Next.js", "Node.js", "Tailwind CSS"],
-      image: "/ilustraciones/quo-centromedico-5.webp",
+      image: "/ilustraciones/quo-centromedico-1.webp",
       url: "https://www.quocentromedico.com/"
     },
     {

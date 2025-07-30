@@ -161,7 +161,7 @@ export default function Home() {
         ? "Plataforma en Argentina para consulta de precios de autos nuevos y usados, con funcionalidades de búsqueda avanzada, calculadora de transferencias y planes de suscripción. Desarrollada para brindar información actualizada y confiable a miles de usuarios mensuales."
         : "Platform in Argentina for consulting prices of new and used cars, with advanced search functionalities, transfer calculator and subscription plans. Developed to provide updated and reliable information to thousands of monthly users.",
       tags: ["Next.js", "Node.js", "Tailwind CSS"],
-      image: "/autoarg-5.webp",
+      image: "/ilustraciones/autoarg.png",
       url: "https://www.autoarg.com/"
     }
   ];

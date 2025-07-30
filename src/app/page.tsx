@@ -143,17 +143,8 @@ export default function Home() {
         ? "Plataforma web para la gestión de turnos médicos online, permitiendo a pacientes reservar citas y a administradores gestionar profesionales y especialidades. Desarrollada para QUO Centro Médico en Tucumán."
         : "Web platform for online medical appointment management, allowing patients to book appointments and administrators to manage professionals and specialties. Developed for QUO Medical Center in Tucumán.",
       tags: ["Next.js", "Node.js", "Tailwind CSS"],
-      image: "/quo-centromedico-5.webp",
+      image: "/ilustraciones/quo-centromedico-5.webp",
       url: "https://www.quocentromedico.com/"
-    },
-    {
-      title: "AutoARG",
-      description: language === 'es'
-        ? "Plataforma en Argentina para consulta de precios de autos nuevos y usados, con funcionalidades de búsqueda avanzada, calculadora de transferencias y planes de suscripción. Desarrollada para brindar información actualizada y confiable a miles de usuarios mensuales."
-        : "Platform in Argentina for consulting prices of new and used cars, with advanced search functionalities, transfer calculator and subscription plans. Developed to provide updated and reliable information to thousands of monthly users.",
-      tags: ["Next.js", "Node.js", "Tailwind CSS"],
-      image: "/autoarg-5.webp",
-      url: "https://www.autoarg.com/"
     },
     {
       title: "Kuranda Business",
@@ -163,6 +154,15 @@ export default function Home() {
       tags: ["React", "JavaScript", "CSS"],
       image: "/ilustraciones/kuranda.png",
       url: "http://kuranda-bares-test.netlify.app/"
+    },
+    {
+      title: "AutoARG",
+      description: language === 'es'
+        ? "Plataforma en Argentina para consulta de precios de autos nuevos y usados, con funcionalidades de búsqueda avanzada, calculadora de transferencias y planes de suscripción. Desarrollada para brindar información actualizada y confiable a miles de usuarios mensuales."
+        : "Platform in Argentina for consulting prices of new and used cars, with advanced search functionalities, transfer calculator and subscription plans. Developed to provide updated and reliable information to thousands of monthly users.",
+      tags: ["Next.js", "Node.js", "Tailwind CSS"],
+      image: "/autoarg-5.webp",
+      url: "https://www.autoarg.com/"
     }
   ];
 

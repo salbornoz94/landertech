@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LanderTech - Diseño Web y Soluciones Digitales",
+  title: "LanderTech - Desarrollo de Software",
   description: "Diseñamos sitios web que marcan la diferencia. Con un enfoque en UX/UI innovador y optimización SEO, creamos sitios que se ven increíbles y funcionan perfectamente en cualquier dispositivo.",
   icons: {
     icon: [

@@ -158,8 +158,8 @@ export default function Home() {
     {
       title: "Kuranda Bares",
       description: language === 'es'
-        ? "Aplicación web para la gestión y descubrimiento de bares en Kuranda. Plataforma interactiva que permite a usuarios explorar diferentes establecimientos, consultar información detallada y conectar con la vibrante vida nocturna local."
-        : "Web application for bar management and discovery in Kuranda. Interactive platform that allows users to explore different establishments, consult detailed information and connect with the vibrant local nightlife.",
+        ? "Sistema web para gestión de pedidos de frutas y verduras entre bares, proveeduría, logística y administración. Permite a los clientes realizar pedidos, coordinar entregas y a los administradores gestionar usuarios, productos y vehículos."
+        : "Web system for managing fruit and vegetable orders between bars, supply, logistics, and admin roles. Enables clients to place orders, coordinate deliveries, and admins to manage users, products, and vehicles.",
       tags: ["React", "JavaScript", "CSS"],
       image: "/ilustraciones/kuranda.png",
       url: "http://kuranda-bares-test.netlify.app/"

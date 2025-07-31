@@ -180,7 +180,7 @@ export default function Home() {
   const clients = [
     { name: "QUO Centro Médico", logo: "/quo.jpeg" },
     { name: "Kuranda", logo: "/kuranda-logo.png" },
-    { name: "Nou Consultoría Integral", logo: "/ilustraciones/IlustracionesLanderTech-04.png" }
+    { name: "Nou Consultoría Integral", logo: "/NOUlogo.png" }
   ];
 
 

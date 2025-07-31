@@ -156,6 +156,15 @@ export default function Home() {
       url: "http://kuranda-bares-test.netlify.app/"
     },
     {
+      title: "Nou Consultoría Integral",
+      description: language === 'es'
+        ? "Sitio web corporativo para consultoría especializada en pymes, con secciones de servicios, experiencia y contacto. Diseñado para comunicar profesionalismo y generar confianza en potenciales clientes del sector empresarial."
+        : "Corporate website for specialized SME consulting, with services, experience and contact sections. Designed to communicate professionalism and generate trust in potential clients from the business sector.",
+      tags: ["Next.js", "Tailwind CSS", "Responsive"],
+      image: "/evaristonougues.jpeg",
+      url: "https://evaristo-nougues.vercel.app/"
+    },
+    {
       title: "AutoARG",
       description: language === 'es'
         ? "Plataforma en Argentina para consulta de precios de autos nuevos y usados, con funcionalidades de búsqueda avanzada, calculadora de transferencias y planes de suscripción. Desarrollada para brindar información actualizada y confiable a miles de usuarios mensuales."
@@ -170,7 +179,8 @@ export default function Home() {
 
   const clients = [
     { name: "QUO Centro Médico", logo: "/quo.jpeg" },
-    { name: "Kuranda", logo: "/kuranda-logo.png" }
+    { name: "Kuranda", logo: "/kuranda-logo.png" },
+    { name: "Nou Consultoría Integral", logo: "/ilustraciones/IlustracionesLanderTech-04.png" }
   ];
 
 
